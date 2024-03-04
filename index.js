@@ -6,13 +6,33 @@
 
 // Leap year
 
-function isLeapYear (year){
-    if((year % 400 === 0) || (year % 4 === 0 ) && (year % 100 !== 0)) {
-        console.log(`${year} is a leap year`);
-    } else {
-     console.log(`${year} is not leap year`);
- }
+// function isLeapYear (year){
+//     if((year % 400 === 0) || (year % 4 === 0 ) && (year % 100 !== 0)) {
+//         console.log(`${year} is a leap year`);
+//     } else {
+//      console.log(`${year} is not leap year`);
+//  }
+// }
+
+
+// isLeapYear(2026);
+
+
+
+
+const vowles = ["a","b","d","u","g","o","u"];
+
+function countVowels (sentence){
+    let count = 0;
+    const letters = Array.from(sentence);
+    letters.forEach(function(value,index,array){
+        if(value.includes(value)){
+            count++;
+        }
+    });
+    return count;
+    
 }
 
 
-isLeapYear(2026);
+console.log(countVowels("I Love Bangladesh"));
