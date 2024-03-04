@@ -1,3 +1,5 @@
-const students = ["Sumit","Akash","Ridoy","Daiya"];
+const roll_numbers = [3, 4, 7, 56, 30, 1];
 
-console.log(students.sort());
+console.log(roll_numbers.sort(function(a, b) {
+    return a - b;
+}));
