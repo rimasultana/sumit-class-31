@@ -42,7 +42,7 @@
 const numbers = [1,3,2,5,5,9,6,6,7,0];
 
 const duplicates = numbers.filter(function(value,index,array){
-    return array.indexOf(value) !== index
+    return array.indexOf(value) === index
 });
 
 console.log(duplicates);
